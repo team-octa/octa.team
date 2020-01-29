@@ -10,7 +10,10 @@
     "start": "next start"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.27",
+    "@emotion/styled": "^10.0.27",
     "@zeit/next-sass": "^1.0.1",
+    "emotion-server": "^10.0.27",
     "next": "^9.2.1",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "react": "^16.12.0",
