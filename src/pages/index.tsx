@@ -12,17 +12,20 @@ const IndexStyle = styled.div`
 `
 
 const IntroSection = styled.section`
-  background: linear-gradient(180deg, #f7d6ff 0%, #005686 100%),
-    linear-gradient(180deg, #ffffff 0%, #060046 100%),
-    linear-gradient(130deg, #00ffa3 0%, #1a003c 100%),
-    linear-gradient(307deg, #ff0000 0%, #3300c6 100%),
-    radial-gradient(50% 72% at 50% 50%, #004584 0%, #00ffb2 100%),
-    radial-gradient(100% 140% at 100% 0%, #5ed500 0%, #2200aa 100%);
-  background-blend-mode: soft-light, overlay, difference, difference, color-burn,
-    normal;
+  background: linear-gradient(
+    56deg,
+    rgb(255, 180, 172) 0%,
+    rgb(255, 180, 172) 40%,
+    rgb(103, 145, 134) calc(40% + 1px),
+    rgb(103, 145, 134) 50%,
+    rgb(38, 78, 112) calc(50% + 1px),
+    rgb(38, 78, 112) 70%,
+    rgb(255, 235, 211) calc(70% + 1px),
+    rgb(255, 235, 211) 100%
+  );
   height: 100vh;
   .bg {
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.4);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,7 +43,8 @@ const IntroTitle = styled.div`
     b {
       font-weight: 800;
     }
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.22);
+    text-shadow: 0 2px 4px rgba(13, 0, 77, 0.08),
+      0 3px 6px rgba(13, 0, 77, 0.08), 0 8px 16px rgba(13, 0, 77, 0.08);
   }
   p.subDesc {
     color: #3c3c3c;
