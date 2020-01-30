@@ -1,9 +1,9 @@
 {
   "name": "octa.team",
   "version": "1.0.0",
-  "description": "Octa official homepage",
-  "main": "index.js",
+  "description": "team Octa official homepage",
   "author": "DDark, team Octa",
+  "license": "private",
   "scripts": {
     "dev": "next",
     "build": "next build",
