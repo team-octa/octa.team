@@ -12,15 +12,17 @@ const IndexStyle = styled.div`
 `
 
 const IntroSection = styled.section`
-  background: radial-gradient(50% 123.47% at 50% 50%, #00ff94 0%, #720059 100%),
-    linear-gradient(121.28deg, #669600 0%, #ff0000 100%),
-    linear-gradient(360deg, #0029ff 0%, #8fff00 100%),
-    radial-gradient(100% 164.72% at 100% 100%, #6100ff 0%, #00ff57 100%),
-    radial-gradient(100% 148.07% at 0% 0%, #fff500 0%, #51d500 100%);
-  background-blend-mode: screen, color-dodge, overlay, difference, normal;
+  background: linear-gradient(180deg, #f7d6ff 0%, #005686 100%),
+    linear-gradient(180deg, #ffffff 0%, #060046 100%),
+    linear-gradient(130deg, #00ffa3 0%, #1a003c 100%),
+    linear-gradient(307deg, #ff0000 0%, #3300c6 100%),
+    radial-gradient(50% 72% at 50% 50%, #004584 0%, #00ffb2 100%),
+    radial-gradient(100% 140% at 100% 0%, #5ed500 0%, #2200aa 100%);
+  background-blend-mode: soft-light, overlay, difference, difference, color-burn,
+    normal;
   height: 100vh;
   .bg {
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
