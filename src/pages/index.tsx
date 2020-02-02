@@ -53,6 +53,50 @@ const IntroTitle = styled.div`
   }
 `
 
+const MouseScroll = styled.div`
+  .icon-scroll,
+  .icon-scroll:before {
+    position: absolute;
+    left: 50%;
+  }
+  .icon-scroll {
+    width: 30px;
+    height: 47px;
+    margin-left: -20px;
+    bottom: 25px;
+    margin-top: -35px;
+    border: 2px solid #333;
+    border-radius: 30px;
+  }
+  @media (max-width: 767px) {
+    .icon-scroll {
+      position: relative;
+    }
+  }
+  .icon-scroll:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #333;
+    margin-left: -4px;
+    top: 8px;
+    border-radius: 4px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+  }
+  @keyframes scroll {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translateY(23px);
+      transform: translateY(23px);
+    }
+  }
+`
+
 const IndexPage: React.FC = () => {
   return (
     <IndexStyle>
@@ -76,6 +120,9 @@ const IndexPage: React.FC = () => {
               바뀌죠.
             </p>
           </IntroTitle>
+          <MouseScroll>
+            <div className="icon-scroll"></div>
+          </MouseScroll>
         </div>
       </IntroSection>
     </IndexStyle>
