@@ -4,6 +4,7 @@ import Head from 'next/head'
 
 // Components
 import Header from '../components/Header'
+import mouseScroll from '../components/mouseScroll'
 
 // styled
 const IndexStyle = styled.div`
@@ -12,20 +13,16 @@ const IndexStyle = styled.div`
 `
 
 const IntroSection = styled.section`
-  background: linear-gradient(
-    56deg,
-    rgb(255, 180, 172) 0%,
-    rgb(255, 180, 172) 40%,
-    rgb(103, 145, 134) calc(40% + 1px),
-    rgb(103, 145, 134) 50%,
-    rgb(38, 78, 112) calc(50% + 1px),
-    rgb(38, 78, 112) 70%,
-    rgb(255, 235, 211) calc(70% + 1px),
-    rgb(255, 235, 211) 100%
-  );
+  background: linear-gradient(238.72deg, #ffb864 0%, #006c4c 100%),
+    radial-gradient(100% 224.43% at 0% 0%, #fcc482 0%, #002e74 100%),
+    linear-gradient(121.28deg, #ffd464 0%, #00553b 100%),
+    linear-gradient(229.79deg, #7534ff 0%, #248900 94.19%),
+    radial-gradient(56.26% 101.79% at 50% 0%, #8f00ff 0%, #493500 100%),
+    linear-gradient(96.19deg, #500052 3.37%, #d5b300 96.63%);
+  background-blend-mode: overlay, screen, lighten, hard-light, screen, normal;
   height: 100vh;
   .bg {
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
