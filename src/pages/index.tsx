@@ -4,7 +4,6 @@ import Head from 'next/head'
 
 // Components
 import Header from '../components/Header'
-import mouseScroll from '../components/mouseScroll'
 
 // styled
 const IndexStyle = styled.div`
